@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import Alert from 'react-popup-alert'
-
+import upload from "../assets/images/gestion.PNG";
 
 export default function ListComponent() {
   
@@ -34,9 +34,9 @@ export default function ListComponent() {
     }
     
     const show=()=>{
-        axios.get("http://localhost:8089/file/getAll")
+        axios.get("https://localhost:7059/api/FileAPI")
         .then(response=>{
-           const list=response.data;
+           const list=response.data.response;
           console.log(list);
             setList(list);
         })
@@ -93,7 +93,7 @@ fetch("https://localhost:7059/api/FileAPI", requestOptions)
              
                <div class="col-md-6">
                    <div class="choose-img">
-                       <img src="./source/images/gestion.png" alt=""/>
+                       <img src={upload} alt=""/>
                      
                       
 

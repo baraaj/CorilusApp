@@ -1,10 +1,16 @@
 import React from 'react';
 //import { logo } from './../logoassets/images/logo.png'; 
 import  logo  from  '../assets/images/image.PNG';
+import  image1  from  '../assets/images/image1.PNG';
+import  image2  from  '../assets/images/image2.PNG';
+import  image3  from  '../assets/images/image3.PNG';
+import  image4  from  '../assets/images/image4.PNG';
+import  contact  from  '../assets/images/contacter.PNG';
+import  ca from  '../assets/images/ca.PNG';
 export default function HomeComponent() {
     return (
         <div className="App">
-           <section id="banner"> 
+           <section id="banner"className="image"> 
            
             <img src={logo} alt="easylo logo"/>
        
@@ -25,7 +31,7 @@ export default function HomeComponent() {
                 
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="choose-img"> <img src="../assets/images/image4.png" alt=""/> </div>
+                        <div class="choose-img"> <img src={image4} alt=""/> </div>
                         <div class="protext"><h3>Dossier patient informatisé</h3></div> 
                         <p>
                         Gérez et stockez les données de vos patients dans des fichiers numériques sécurisés. Vous trouverez ainsi vos données à tout moment et où que vous soyez, et vous pourrez les partager aisément avec les patients et d’autres prestataires de soins.
@@ -33,7 +39,7 @@ export default function HomeComponent() {
                     </div>
     
                     <div class="col-md-3">
-                        <div class="choose-img"> <img src="../assets/images/image1.png" alt=""/> </div>
+                        <div class="choose-img"> <img src={image1} alt=""/> </div>
                         <div class="protext"><h3>Entièrement connecté</h3></div> 
                         <p>
                         Vous connecter à partir de votre logiciel à tous les services eHealth, vos collègues, les hôpitaux, les plateformes santé et d’autres professionnels de la santé devient un jeu d’enfant.
@@ -41,7 +47,7 @@ export default function HomeComponent() {
                     </div>
     
                     <div class="col-md-3">
-                        <div class="choose-img"> <img src="../assets/images/image2.png" alt=""/> </div>
+                        <div class="choose-img"> <img src={image2} alt=""/> </div>
                         <div class="protext"><h3>Plus qu'un simple logiciel</h3></div>
                         <p>
                         Du matériel aux agendas en ligne en passant par un télésecrétariat connecté. Chez Corilus, vous trouverez bien plus qu'un simple logiciel de cabinet. Vous disposerez ainsi de tous les outils nécessaires pour aider vos patients aussi efficacement que possible.
@@ -49,7 +55,7 @@ export default function HomeComponent() {
                     </div>
     
                     <div class="col-md-3">
-                        <div class="choose-img"> <img src="../assets/images/image3.png" alt=""/> </div>
+                        <div class="choose-img"> <img src={image3} alt=""/> </div>
                         <div class="protext"><h3>Un soutien optimal</h3></div>
                         <p>
                         Notre équipe de support au client, nos formateurs et autres experts vous conseillent et vous assistent, et suivent de près les derniers développements eHealth. Vous pouvez ainsi vous concentrer sur ce qui compte vraiment : soigner vos patients.
@@ -69,7 +75,7 @@ export default function HomeComponent() {
                         </div>
                         <div class="col-md-6">
                             <div class="choose-img">
-                                <img src="../assets/images/ca.png" alt=""/>
+                                <img src={ca} alt=""/>
                             </div>
                         </div>
                     </div>
@@ -116,7 +122,7 @@ export default function HomeComponent() {
                     </div>
                 </div>
             </div>
-            <img src="../assets/images/contacter.png" alt="easylo logo"/>
+            <img src={contact} alt="easylo logo"/>
         </section>
        </div>
       

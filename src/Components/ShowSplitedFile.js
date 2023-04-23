@@ -43,7 +43,7 @@ export default function ShowSplitedFile() {
         {
           field: 'fileType',
           headerName: 'fileType',
-          width: 150,
+          width: 250,
           
         },
         {

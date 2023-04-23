@@ -1,6 +1,6 @@
 //rfce
 import send from "../assets/images/send2.PNG";
-
+import logo from "../assets/images/logo.PNG";
 function Footer() {
     return (
         <section id="footer">
@@ -8,7 +8,7 @@ function Footer() {
             <div class="row">
                 <div class="col-md-4">
                     <div class="easylo-img">
-                        <img src='./source/images/Capture.png' alt=""/>
+                        <img src={logo} alt=""/>
                     </div>
                     <div class="socials">
                     <p class="easy-para">Suivez-nous</p>
